@@ -47,6 +47,9 @@ ul{
     padding: 1%;
     overflow: hidden;
     background-color: var(--bg-color);
+    position: fixed;
+    width: 100%;
+    z-index: 3;
 }
 
 .nav a {
