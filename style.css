@@ -1,0 +1,180 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Grenze Gotisch', cursive;
+    margin: 0;
+    --txtcolor: whitesmoke;
+    --bg-color: rgb(32, 32, 32);
+    font-size: 1.5em;
+}
+
+#button{
+    display: block;
+    visibility: hidden;
+    opacity: 0;
+    border: solid black 1px;
+    background-color: var(--bg-color);
+    top: 90%;
+    left: 90%;
+    position: fixed;
+    font-family: sans-serif, monospace;
+    padding: 0.5em;
+    border-radius: 4px;
+}
+#button:hover{
+    background-color: #3a3a3a;
+}
+#button:active{
+    background-color: #555555;
+}
+
+a{
+    color: var(--txtcolor);
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+.nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 0;
+    padding: 1%;
+    overflow: hidden;
+    background-color: var(--bg-color);
+}
+
+.nav a {
+    color: #f2f2f2;
+    text-align: center;
+    text-decoration: none;
+    padding: 0.3em;
+}
+
+.nav a:hover{
+    background-color: #ddd;
+    color: black;
+    border-radius: 5px;
+}
+
+.nav a.active{
+    background-color: #04AA6D;
+    color: white;
+    border-radius: 5px;
+}
+
+header{
+    color:var(--txtcolor);
+}
+
+.title-container{
+    margin-bottom: 10%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.bg-image{
+    background-image: url(docs/tattoo_shop.jpg);
+    width: 100%;
+    padding-bottom: 50%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    filter: blur(4px);
+    -webkit-filter: blur(4px);
+    z-index: 1;
+}
+
+.title{
+    margin-top: 15%;
+    font-size: 4em;
+    text-align: center;
+    color: var(--txtcolor);
+    text-shadow:black 2px 2px 4px;
+    z-index: 2;
+}
+
+main{
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    font-size: 1.5em;
+}
+
+@media only screen and (max-width:600px){
+    body{
+        font-size: 1em;
+    }
+    .title-container{
+        margin-bottom: 30%;
+    }
+    .bg-image{
+        filter: blur(2px);
+        -webkit-filter: blur(2px);
+        padding-bottom: 60%;
+    }
+    .worksdisplay img{
+        border: solid rgb(32, 32, 32, 0.5) 0.25em;
+        margin-bottom: 2em;
+        width: 200px;
+        height: 200px;
+    }
+    #button{
+        top: 87%;
+        left: 80%;
+    }
+}
+
+main p{
+    margin: 10%;
+}
+
+.works h1{
+    text-align: center;
+    margin: 10%;
+    margin-top: 2%;
+    border-top: solid black;
+}
+
+.worksdisplay{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+@media only screen and (min-width:600px){
+    .worksdisplay img{
+        border: solid rgb(32, 32, 32, 0.5) 0.25em;
+        margin-bottom: 2em;
+        width: 400px;
+        height: 400px;
+    }
+}
+
+.contact h1{
+    text-align: center;
+    margin: 10%;
+    margin-top: 2%;
+    border-top: solid black;
+    margin-bottom: 2em;
+}
+.social{
+    display: flex;
+    justify-content: center;
+}
+.contact img{
+    width: 4em;
+    padding-inline: 2em;
+}
+
+footer{
+    margin-bottom: 3em;
+}
